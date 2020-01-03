@@ -1,0 +1,36 @@
+#mobileContent{
+
+}
+#mobileContent .mobile-artist{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mobileContent .mobile-artist h1{
+    margin: 8px 0 0 0;
+}
+
+#mobileContent .mobile-artist h4{
+    margin: 4px 0;
+}
+
+#mobileContent .mobile-menu-pic{
+    width: 100%;
+    padding: 0 20px;
+}
+#mobileContent .mobile-menu-pic img{
+    width: 100%;
+}
+
+#mobileContent .mobile-link-container{
+    text-align: center;
+}
+#mobileContent .mobile-link-container a{
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+#mobileContent .mobile-link-container span{
+    padding: 0 3px;
+}

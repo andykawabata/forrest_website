@@ -1,0 +1,194 @@
+a{ 
+    color:#505050;
+    text-decoration: none;  
+}
+
+
+
+.albumInfo{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    font-family: 'nunito';
+    
+    
+    
+}
+
+.albumInfo .center-album{
+    display: inline-block;
+    margin-bottom: 0;
+    
+}
+
+.albumInfo h3{
+    margin: 0;
+}
+
+.albumInfo h4{
+  display: inline-block;
+  font-size: 16px;
+  width: 110px;
+  margin: 13px 0 0 0;
+  font-weight: lighter;
+}
+
+.albumInfo h5{
+    display: inline-block;
+    font-size: 15px;
+    width: 50px;
+    margin-bottom: 10px;
+    margin:0;
+    font-weight: lighter;
+  }
+  
+.albumInfo h4.left-album{
+    text-align: right;
+}
+.albumInfo h4.center-album{
+    text-align: center;
+    margin: 0 30px;
+
+}
+.albumInfo h4.right-album{
+    text-align: left;
+  }
+
+
+.yearList{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 12px 0;
+    
+
+}
+
+.albumInfo h5.active-year{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-shadow: 1px 1px 1px grey;
+    
+}
+.albumInfo h4.active-album{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.albumInfo h4:not(.active-album):hover{
+    color:black;
+    font-weight: 600;
+}
+.albumInfo h5:not(.active-year):hover{
+    color:black;
+    font-weight: 700;
+}
+
+.galleryWrapper{
+    padding: 0 22px;
+}
+
+.slideShowWrapper{
+    height: 85%;
+    
+}
+
+.slideShow{
+    position: relative;
+    height: 100%;
+}
+
+.slide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.simple-nav{
+    text-align: center;
+    margin-top: 10px;
+}
+.simple-nav span{
+    font-size: 15px;
+    display: inline-block;
+    width: 32px;
+}
+.simple-nav span:hover{
+    font-weight:700;
+}
+
+.slide-control{
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 420px)  {
+    
+    .albumInfo{
+        width: 100%;
+    }
+    .albumInfo h4{
+        width: auto !important;
+        display: block !important;
+    }
+
+    .albumInfo h4{
+       float: none;
+       text-align: center !important;
+       margin-top:13px !important;
+    }
+
+    .albumInfo h5 {
+        display: inline-block;
+        font-size: 15px;
+        width: 47px;
+        margin-bottom: 10px;
+        margin: 0;
+        font-weight: lighter;
+    }
+    .yearList{
+        margin: 18px 0;
+    }
+
+    .yearList h5 a{
+        font-size: 14px;
+    }
+
+    .galleryWrapper{
+        height: auto !important;
+        padding: 0 10px;
+    }
+    .slideShowWrapper {
+        height: auto;
+    }
+    
+    .simple-nav{
+        display: none;
+    }
+    .slide {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        opacity: 1 !important;
+        padding-bottom: 14px;
+    }
+    
+
+}

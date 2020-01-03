@@ -1,0 +1,288 @@
+/*navbar styles*/
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+    width: 100%;
+}
+
+
+body{
+    /*font-family: 'Encode Sans Expanded', sans-serif;*/
+    
+    font-family: 'Nunito';
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    overflow-x: auto;
+    height:100%;
+    width: 100%;
+    margin:0px;
+    overflow-y: hidden;
+    
+}
+
+header{
+    font: normal 16px 'Open Sans', helvetica, arial, sans-serif;
+    color: #eee;
+    background:#191919;
+    width: 100%;
+    /*padding: 100px;*/
+
+}
+
+header .header-content{
+    width: 1100px;
+    margin: auto;
+}
+
+header .logo {
+    float: left; 
+    height: 100%;
+    padding: 7px 0 0 25px;
+    
+}
+
+header .logo img{
+margin: 0;
+   height: 40px;
+
+}
+
+header #artist{
+    float: left;
+    padding: 3px 0 0 19px;
+
+    
+}
+
+header #artist h1{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight:  600;
+}
+
+header #artist h4{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-size: .8em;
+    padding-left: 3px;
+    font-family: 'nunito'
+}
+.active-nav{
+    background: blueviolet;
+}
+
+header nav{
+    float: right;
+    padding: 0 25px 0 0;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+header nav ul li{
+    position: relative;
+    padding: 0 0;
+}
+
+header nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    background: #191919;
+    line-height: 50px;
+    height: 56px;
+    padding: 4px 5px 0 5px;
+    margin-left: 40px;
+    
+    box-sizing: content-box;
+}
+
+header nav ul li:hover > a{
+    background: blueviolet;
+    
+
+}
+
+
+/*
+header nav ul li.sub-menu:before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    color: white;
+    line-height: 50px;;
+}
+*/
+
+header nav ul li ul{
+    padding: 0 0 0 0;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    z-index:999;
+    display: none;
+    
+} 
+
+/*
+header nav ul li:hover ul{
+    display: flex;
+    background: #191919;
+    
+}
+*/
+header nav ul li:hover ul li a{
+    position: relative;
+    box-shadow: none;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+
+
+header nav ul li ul li a{
+/*
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: white;
+    */
+    
+}
+
+header #menu-toggle{
+    display: none;
+}
+.fa{
+    padding: 11px 20px 0 0;
+}
+
+@media only screen and (min-width: 1700px)  {
+    header .header-content{
+        width: 1300px;
+    }
+    
+}
+
+@media only screen and (max-width: 1166px)  {
+
+    header .header-content{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+    header .header-content{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    
+}
+
+ @media only screen and (max-width: 560px)  {
+    header{
+       
+    }
+
+    header .logo{
+        float: none;
+        padding: 8px 0 8px 20px;
+
+    }
+
+    header .logo img{
+        
+        
+
+    }
+    header .logo img{
+       
+        padding: 0;
+
+    }
+    header #artist{
+        display: none;
+    }
+
+    header nav{
+        
+        position: absolute;
+        width: 100%;
+        transition: .05s;
+        float: none;
+        padding: 0;
+        left: -100%;
+        transition: 1000ms;
+        z-index: 999;
+    }
+
+
+    header nav.active{
+        left: 0;
+        transition: 1000ms;
+    }
+    
+    header nav ul{
+        padding:0;
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li{
+        padding: 0;
+    }
+    header nav ul li a{
+        margin: 0;
+    }
+    header nav ul li:hover a{
+        background: #191919;
+    }
+    header nav ul li:hover ul{
+        display: none;
+        background: #191919;
+        
+    }
+
+    header nav ul li ul{
+        position: relative;
+    }
+    header nav ul li ul li a{
+        
+    }
+    header #menu-toggle{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+ }
+ .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
