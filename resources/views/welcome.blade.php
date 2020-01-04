@@ -22,7 +22,7 @@
             
                 <div class="outer-frame">
                     <div class="picture-frame">  
-                        <a href="album/printmaking"> 
+                        <a href="album/prints"> 
                             <img src="{{ asset('static-img/prints.jpg')}}"> 
                         </a>
                     </div>
@@ -37,7 +37,7 @@
                             <img src="{{ asset('static-img/drawings.jpg')}}"> 
                         </div>
                     </a>
-                    <a href="album/drawing"> 
+                    <a href="album/drawings"> 
                         <span>Drawings</span>
                     </a>
                 </div>

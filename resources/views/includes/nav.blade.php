@@ -2,8 +2,10 @@
     <div class="header-content clearfix">
         <div class="logo"><img src="{{asset('static-img/fj.png')}}"> </div>
         <div id="artist">
-            <h1 class="menu-text">Forrest Joss</h1>
-            <h4 class="menu-text">Visual Artist</h4>
+            <a href="/">
+                <h1 class="menu-text">Forrest Joss</h1>
+                <h4 class="menu-text">Visual Artist</h4>
+            </a>
         </div>
         <nav>
             <ul>

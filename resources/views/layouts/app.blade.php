@@ -26,13 +26,14 @@
     @yield('content')
 
     <script>
-        /*
+        
         $( document ).ready(function(){
         //Mobile menu display/hide
             $('#menu-toggle').click(function(){
                 $('nav').toggleClass('active');
             });
-            
+        });
+        /*
             //Submenu onclick dropdown/up
             $('li.sub-menu > a').click(function(){
                 
