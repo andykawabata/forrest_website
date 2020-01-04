@@ -23,33 +23,33 @@
                 <div class="outer-frame">
                     <div class="picture-frame">  
                         <a href="album/printmaking"> 
-                            <img src="{{ asset('static-img/hand.jpg')}}"> 
+                            <img src="{{ asset('static-img/prints.jpg')}}"> 
                         </a>
                     </div>
-                        <a href="album/printmaking"> 
-                            <span>Art</span>
+                        <a href="album/prints"> 
+                            <span>Printmaking</span>
                         </a>
                 </div>
            
                 <div class="outer-frame">
-                    <a href="album/drawing"> 
+                    <a href="album/drawings"> 
                         <div class="picture-frame">
-                            <img src="{{ asset('static-img/hand.jpg')}}"> 
+                            <img src="{{ asset('static-img/drawings.jpg')}}"> 
                         </div>
                     </a>
                     <a href="album/drawing"> 
-                        <span>Art</span>
+                        <span>Drawings</span>
                     </a>
                 </div>
              
                 <div class="outer-frame">
                     <a href="album/sculpture"> 
                         <div class="picture-frame">
-                            <img src="{{ asset('static-img/hand.jpg') }}"> 
+                            <img src="{{ asset('static-img/sculpture.jpg') }}"> 
                         </div>
                     </a>
                     <a href="album/sculpture"> 
-                        <span>Art</span>
+                        <span>Sculpture</span>
                     </a>
                 </div>
             
