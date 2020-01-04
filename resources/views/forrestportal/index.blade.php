@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    @include('includes.auth-nav')
     <h1>Main Menu</h1>
     <ul>
         <li class="list-inline-item"><a href="/forrestportal/art" >Edit Art</a></li>

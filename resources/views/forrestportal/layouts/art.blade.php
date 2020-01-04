@@ -13,6 +13,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('includes.auth-nav')
     <a href="/forrestportal">Main Menu</a>
     <h1>Choose Album</h1>
     <ul class="nav nav-pills">

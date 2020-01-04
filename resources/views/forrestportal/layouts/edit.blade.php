@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container">
-       
+        @include('includes.auth-nav')
         <div><a href="/forrestportal/art/{{$album_name}}">< Back To Album</a></div>
         <h1>Edit<h1>
         <h3>{{$album_name}}</h3>

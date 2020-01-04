@@ -15,28 +15,45 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
+//Auth::routes();
+// Authentication Routes...
+Route::get('forrestportal/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('forrestportal/login', 'Auth\LoginController@login');
+Route::post('forrestportal/logout', 'Auth\LoginController@logout')->name('logout');
+// Registration Routes...
+Route::get('forrestportal/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('forrestportal/register', 'Auth\RegisterController@register');
+// Password Reset Routes...
+Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/album/{album_name}/{year_name}', 'AlbumController@show')->name('album');
 Route::get('/album/{album_name}', 'AlbumController@showDefault')->name('default_album');
 
-Route::get('/forrestportal/edit/{album}/{year}/{action}', 'EditController@action');
+Route::get('/forrestportal/edit/{album}/{year}/{action}', 'EditController@action')->middleware('auth');
 //upload form submitted
-Route::post('/forrestportal/edit/{album}/{year}/upload', 'PhotoController@store');
+Route::post('/forrestportal/edit/{album}/{year}/upload', 'PhotoController@store')->middleware('auth');
 
 
 Route::get('/forrestportal', function(){
     return view('forrestportal.index');
-});
-Route::get('/forrestportal/art', 'ArtController@index');
-Route::get('/forrestportal/art/{album_name}', 'ArtController@show');
-Route::get('/forrestportal/art/{album_name}/{year_name}/edit', 'EditController@index');
-Route::get('/forrestportal/art/{album_name}/{year_name}/edit/{action}', 'EditController@action');
+})->middleware('auth');
+
+Route::get('/forrestportal/art', 'ArtController@index')->middleware('auth');
+Route::get('/forrestportal/art/{album_name}', 'ArtController@show')->middleware('auth');
+Route::get('/forrestportal/art/{album_name}/{year_name}/edit', 'EditController@index')->middleware('auth');
+Route::get('/forrestportal/art/{album_name}/{year_name}/edit/{action}', 'EditController@action')->middleware('auth');
 
 
-Route::post('/forrestportal/art/{album_name}/{year_name}/edit/upload', 'PhotoController@store');
-Route::post('/forrestportal/art/{album_name}/{year_name}/edit/delete', 'PhotoController@delete');
+Route::post('/forrestportal/art/{album_name}/{year_name}/edit/upload', 'PhotoController@store')->middleware('auth');
+Route::post('/forrestportal/art/{album_name}/{year_name}/edit/delete', 'PhotoController@delete')->middleware('auth');
+
+
+
+//Auth::routes();
 
 
