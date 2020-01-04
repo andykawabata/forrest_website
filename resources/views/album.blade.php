@@ -47,11 +47,17 @@
     window.addEventListener("resize", function(){resizeHeight();});
             
     function resizeHeight(){
-        console.log("resizing height");
+        
+        
         let pageHeight = $('body').height();
+        let pageWidth = $('body').width();
         let navHeight = $('header').height();
         let titleHeight = $('.albumInfo').height();
-        $('.galleryWrapper').height(pageHeight - navHeight - titleHeight);
+        if(pageWidth >= 420){
+            $('.galleryWrapper').height(pageHeight - navHeight - titleHeight);
+            console.log("resizing height");
+        }
+
     }
     </script>
     <script>
