@@ -50,13 +50,11 @@
         
         
         let pageHeight = $('body').height();
-        let pageWidth = $('body').width();
         let navHeight = $('header').height();
         let titleHeight = $('.albumInfo').height();
-        if(pageWidth >= 420){
-            $('.galleryWrapper').height(pageHeight - navHeight - titleHeight);
-            console.log("resizing height");
-        }
+        $('.galleryWrapper').height(pageHeight - navHeight - titleHeight);
+        console.log("resizing height");
+        
 
     }
     </script>
