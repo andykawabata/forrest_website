@@ -1,0 +1,47 @@
+#contactContent{
+    width: 1100px;
+    margin: auto;
+    height: 100%;
+}
+
+#contactContent h1{
+
+    font-weight: 500;
+    letter-spacing: 1.7px;
+    margin: 25px 0 0 0;
+}
+
+
+
+@media only screen and (min-width: 1700px)  {
+    #contactContent{
+        width: 1300px;
+    }
+    
+}
+
+@media only screen and (max-width: 1166px)  {
+
+    #contactContent{
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+    #contactContent{
+        width: 100%;
+    }
+    #contactContent div{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    
+}
+
+ @media only screen and (max-width: 560px)  {
+    #contactContent div{
+        margin-left: 20px;
+    }
+ }

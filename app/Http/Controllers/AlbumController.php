@@ -22,7 +22,7 @@ class AlbumController extends Controller
             array_push($album_years, $year);
         }
         sort($album_years, SORT_NUMERIC);
-
+        //if $year_name not in $album_years (there are no photos in 2019) -> $year_name = $album_years.pop()
         return view('album')->with(compact('file_names', 'album_years', 'album_name', 'year_name'));
 
     }

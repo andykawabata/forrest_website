@@ -1,0 +1,81 @@
+#aboutContent{
+    width: 1100px;
+    margin: auto;
+    
+    }
+#aboutWrapper{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#aboutPicture{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+    padding: 0 12px 0 12px;
+}
+#innerAboutPicture{
+    max-width: 300px;
+    margin: auto;
+}
+#innerAboutPicture img{
+
+}
+
+#bioWrapper{
+    width: 60%;
+    float: right;
+    padding: 0 20px 0 10px;
+}
+
+#bioWrapper h1{
+    font-weight: 600;
+}
+
+#bioWrapper p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+@media only screen and (max-width: 1117px){
+#aboutContent {
+    width: 100%;
+}
+
+@media only screen and (max-width: 560px)  {
+
+
+   #aboutWrapper{
+        margin-top: 10px;
+   }
+
+   #aboutPicture{
+       float: none;
+       width: 100%;
+       margin: 0;
+       padding: 0 15px;
+   }
+   #innerAboutPicture{
+    
+    
+    }
+    #innerAboutPicture img{
+        max-height: 500px;
+    }
+
+    #bioWrapper{
+        width: 100%;
+        float: none;
+        padding: 5px 20px 0 10px;
+    }
+
+    #bioWrapper h1{
+        font-size: 1.5em;
+        letter-spacing: 1.7px;
+    }
+
+    #bioWrapper p{
+        
+    }
+
+}

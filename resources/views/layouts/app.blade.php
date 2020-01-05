@@ -12,6 +12,8 @@
     <link href="{{ URL::asset('css/mainContent.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ URL::asset('css/mobileHome.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('css/albumStyles.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/aboutStyles.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/contactStyles.css') }}" rel="stylesheet">
     
     
     <script
@@ -59,7 +61,7 @@
         work.classList.add("active-nav");
     }
     else if(parts.includes("contact")){
-        let work = document.getElementById("about");
+        let work = document.getElementById("contact");
         work.classList.add("active-nav");
     }
 </script>

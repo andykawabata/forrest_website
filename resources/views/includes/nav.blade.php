@@ -18,8 +18,8 @@
                     </ul>
                 -->
                 </li>
-                <li><a id="about" href="#">ABOUT</a></li>
-                <li><a id="contact" href="#">CONTACT</a></li>
+                <li><a id="about" href="{{route('about')}}">ABOUT</a></li>
+                <li><a id="contact" href="{{route('contact')}}">CONTACT</a></li>
             </ul>
         </nav>
         <div id="menu-toggle"><i class="fa fa-bars fa-2x"></i></div>
