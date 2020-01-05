@@ -25,9 +25,9 @@ Route::get('/contact', function(){return view('contact'); })->name('contact');
 //portal routes
 Route::get('/forrestportal', function(){ return view('forrestportal.index'); })->middleware('auth');
 
-Route::get('/forrestportal/about', 'AboutController@index');
-Route::get('/forrestportal/about/{action}', 'AboutController@action');
-Route::post('/forrestportal/about/{action}', 'AboutController@store');
+Route::get('/forrestportal/about', 'AboutController@index')->middleware('auth');
+Route::get('/forrestportal/about/{action}', 'AboutController@action')->middleware('auth');
+Route::post('/forrestportal/about/{action}', 'AboutController@store')->middleware('auth');
 
 Route::get('/forrestportal/art', 'ArtController@index')->middleware('auth');
 Route::get('/forrestportal/art/{album_name}', 'ArtController@show')->middleware('auth');

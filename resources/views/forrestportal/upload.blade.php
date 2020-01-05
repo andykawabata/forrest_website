@@ -22,12 +22,15 @@
         <form action="upload" method="POST"  id="upload_form" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Choose Image</label>
-                <input type="file" name="file_name">
+                <input name="file_names[]" type="file" multiple> 
+              
             </div>
+            
             <div>
                 <input type="hidden" name="album_name" value="{{$album_name}}">    
                 <input type="hidden" name="year_name" value="{{$year_name}}">    
             </div>
+            
         </form>
     </div>
 
@@ -38,6 +41,7 @@
             @endforeach
         @endif
     </div>
+
     <div class="row">
         <button type="submit" form="upload_form" class="btn btn-primary mt-5">Upload</button>
     </div>
