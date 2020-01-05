@@ -11,8 +11,6 @@ class AlbumController extends Controller
 {
     public function show($album_name, $year_name){
 
-        //array of all images in album
-        $file_names = Photo::where('album_name', $album_name)->where('year_name', $year_name)->pluck('file_name');
         
         //get all years in album
         $album_id= Album::where('name', $album_name)->first()->id;
@@ -22,6 +20,14 @@ class AlbumController extends Controller
             array_push($album_years, $year);
         }
         sort($album_years, SORT_NUMERIC);
+        //check to see if album has default year
+        if(!in_array($year_name, $album_years)){
+            $year_name = end($album_years);
+        }
+        //array of all images in album
+        $file_names = Photo::where('album_name', $album_name)->where('year_name', $year_name)->pluck('file_name');
+        
+         
         //if $year_name not in $album_years (there are no photos in 2019) -> $year_name = $album_years.pop()
         return view('album')->with(compact('file_names', 'album_years', 'album_name', 'year_name'));
 

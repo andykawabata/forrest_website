@@ -1,6 +1,6 @@
 <header>
     <div class="header-content clearfix">
-        <div class="logo"><img src="{{asset('static-img/fj.png')}}"> </div>
+        <a href="/"><div class="logo"><img src="{{asset('static-img/fj.png')}}"></div></a>
         <div id="artist">
             <a href="/">
                 <h1 class="menu-text">Forrest Joss</h1>
