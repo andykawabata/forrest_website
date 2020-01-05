@@ -143,17 +143,25 @@ img{
     .albumInfo{
         width: 100%;
     }
-    .albumInfo h4{
-        width: auto !important;
-        display: block !important;
+    
+    .albumInfo .left-album{
+        width: 70px !important;
+    }
+    .albumInfo .right-album{
+        width: 70px !important;
+    }
+    .albumInfo h4.center-album{
+        width: 80px !important;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
+
     .albumInfo h4{
-       float: none;
-       text-align: center !important;
-       margin-top:13px !important;
+      margin-top:13px !important;
     }
 
+    
     .albumInfo h5 {
         display: inline-block;
         font-size: 15px;
