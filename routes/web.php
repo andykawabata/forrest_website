@@ -19,11 +19,16 @@ Route::get('/', function () {
 //public wesite routes
 Route::get('/album/{album_name}/{year_name}', 'AlbumController@show')->name('album');
 Route::get('/album/{album_name}', 'AlbumController@showDefault')->name('default_album');
-Route::get('/about', function(){ return view('about'); })->name('about');
+Route::get('/about', 'AboutController@show')->name('about');
 Route::get('/contact', function(){return view('contact'); })->name('contact');
 
 //portal routes
 Route::get('/forrestportal', function(){ return view('forrestportal.index'); })->middleware('auth');
+
+Route::get('/forrestportal/about', 'AboutController@index');
+Route::get('/forrestportal/about/{action}', 'AboutController@action');
+Route::post('/forrestportal/about/{action}', 'AboutController@store');
+
 Route::get('/forrestportal/art', 'ArtController@index')->middleware('auth');
 Route::get('/forrestportal/art/{album_name}', 'ArtController@show')->middleware('auth');
 Route::get('/forrestportal/art/{album_name}/{year_name}/edit', 'EditController@index')->middleware('auth');

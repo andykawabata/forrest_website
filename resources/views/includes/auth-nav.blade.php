@@ -4,7 +4,7 @@
     <div>
         <!-- Left Side Of Navbar -->
         <!-- Right Side Of Navbar -->
-        <ul>
+        <ul style="padding:4px">
             <!-- Authentication Links -->
             @guest
                 <li class="">

@@ -52,6 +52,15 @@ class DatabaseSeeder extends Seeder
             'created_at' => $datetime,
             'updated_at' => $datetime
         ]);
+
+        DB::table('abouts')->insert([
+            'file_name' => 'image.jpg',
+            'p1' => 'paragraphe one',
+            'p2' => 'paragraph two',
+            'p3' => 'paragraph three'
+        ]);
+
+        
     }
     
 }
