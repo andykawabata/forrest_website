@@ -145,13 +145,13 @@ img{
     }
     
     .albumInfo .left-album{
-        width: 70px !important;
+        width: 80px !important;
     }
     .albumInfo .right-album{
-        width: 70px !important;
+        width: 80px !important;
     }
     .albumInfo h4.center-album{
-        width: 80px !important;
+        width: 110px !important;
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -175,7 +175,7 @@ img{
     }
 
     .yearList h5 a{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .galleryWrapper{
