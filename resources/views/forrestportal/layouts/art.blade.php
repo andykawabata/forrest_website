@@ -10,7 +10,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
-    <title>Document</title>
+    <title>Forrest Portal</title>
 </head>
 <body>
     @include('includes.auth-nav')
