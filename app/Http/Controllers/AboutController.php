@@ -72,7 +72,10 @@ class AboutController extends Controller
             
         }
         else if($action == 'editbio' ){
-
+            $request['p1'] = $request['p1'] == null ? "" : $request['p1'];
+            $request['p2'] = $request['p2'] == null ? "" : $request['p2'];
+            $request['p3'] = $request['p3'] == null ? "" : $request['p3'];
+            
             $this->validate($request, [
                 'p1' => 'max:3000',
                 'p2' => 'max:3000',

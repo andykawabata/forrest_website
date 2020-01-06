@@ -20,7 +20,7 @@ class PhotoController extends Controller
         $this->validate($request, [
 
             'file_names' => 'required',
-            'file_names.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            'file_names.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:600'
 
         ]);
         $album_name = $request['album_name'];

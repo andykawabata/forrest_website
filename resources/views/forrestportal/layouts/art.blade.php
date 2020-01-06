@@ -14,15 +14,17 @@
 </head>
 <body>
     @include('includes.auth-nav')
-    <a href="/forrestportal">Main Menu</a>
-    <h1>Choose Album</h1>
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/forrestportal/art/drawings" class="nav-link ">Drawings</a></li>
-        <li class="nav-item"><a href="/forrestportal/art/prints" class="nav-link">Prints</a></li>
-        <li class="nav-item"><a href="/forrestportal/art/sculpture" class="nav-link">Sculpture</a></li>
-    </ul>
+        <div class="container">
+        <a href="/forrestportal">Main Menu</a>
+        <h1>Choose Album</h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/forrestportal/art/drawings" class="nav-link ">Drawings</a></li>
+            <li class="nav-item"><a href="/forrestportal/art/prints" class="nav-link">Prints</a></li>
+            <li class="nav-item"><a href="/forrestportal/art/sculpture" class="nav-link">Sculpture</a></li>
+        </ul>
 
-    @yield('content')
+        @yield('content')
+    </div>
 @isset($album_name)
     <script>
         //if $album_name == end of hreff link

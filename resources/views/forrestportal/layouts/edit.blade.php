@@ -13,17 +13,18 @@
     <title>Document</title>
 </head>
 <body>
+    
+    @include('includes.auth-nav')
     <div class="container">
-        @include('includes.auth-nav')
-        <div><a href="/forrestportal/art/{{$album_name}}">< Back To Album</a></div>
-        <h1>Edit<h1>
+        <div><a href="/forrestportal/art/{{$album_name}}">< Back To Albums</a></div>
+        
         <h3>{{$album_name}}</h3>
         <h3>{{$year_name}}</h3>
 
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="/forrestportal/art/{{$album_name}}/{{$year_name}}/edit/upload" class="nav-link ">Upload</a></li>
             <li class="nav-item"><a href="/forrestportal/art/{{$album_name}}/{{$year_name}}/edit/delete" class="nav-link">Delete</a></li>
-            <li class="nav-item"><a href="/forrestportal/art/{{$album_name}}/{{$year_name}}/edit/sort" class="nav-link">Sort</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sort</a></li>
         </ul>
 
         

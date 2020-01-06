@@ -9,12 +9,13 @@
 </head>
 <body>
     @include('includes.auth-nav')
-    <h1>Main Menu</h1>
-    <ul>
-        <li class="list-inline-item"><a href="/forrestportal/art" >Edit Art</a></li>
-        <li class="list-inline-item"><a href="/forrestportal/about" >Edit About</a></li>
-        <li class="list-inline-item"><a href="/forrestportal/contact">Edit Contact</a></li>
-    </ul>
+    <div class="container">
+        <h1>Main Menu</h1>
+        <a class="mr-5" href="/forrestportal/art" >Edit Art</a>
+        <a href="/forrestportal/about" >Edit About</a>
+    </div>
+    
+    
 
     @yield('content')
 </body>

@@ -53,6 +53,12 @@ class DatabaseSeeder extends Seeder
             'updated_at' => $datetime
         ]);
 
+        DB::table('years')->insert([
+            'name' => '2020',
+            'created_at' => $datetime,
+            'updated_at' => $datetime
+        ]);
+
         DB::table('abouts')->insert([
             'file_name' => 'image.jpg',
             'p1' => 'paragraphe one',

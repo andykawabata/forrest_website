@@ -63,7 +63,7 @@
     @isset($action)
     <div class="container">
         <a href="/forrestportal">Main Menu</a><br>
-        <a href ="/forrestportal/about">Back</a>
+        <a href ="/forrestportal/about">< Back</a>
         
         @if($action == 'changeimage')
             {{-- upload pic form --}}

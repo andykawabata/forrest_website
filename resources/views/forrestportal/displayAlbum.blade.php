@@ -11,9 +11,9 @@
             <div class="col-4 bg-info">
             <h2>{{$year_file['year_name']}}</h2>
             </div>
-        <button type="button" class="btn btn-link bg-dark"><a href="/forrestportal/art/{{$album_name}}/{{$year_file['year_name']}}/edit">edit</a></button>
+            <a href="/forrestportal/art/{{$album_name}}/{{$year_file['year_name']}}/edit"><button type="button" class="btn btn-link bg-dark">edit/upload</button></a>
         </div>
-        <div class="row">
+        <div class="row mb-2">
                 @if(count($year_file['file_names']) > 0)
                     @foreach($year_file['file_names'] as $file_name)
                     <img src="{{ asset('storage/img/'.$file_name) }}" style="height: 100px">
