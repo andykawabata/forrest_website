@@ -21,7 +21,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
-    <title>Document</title>
+    <title>Forrest Joss Art</title>
 </head>
 <body>
     @include('includes.nav')

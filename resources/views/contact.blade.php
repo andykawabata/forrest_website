@@ -11,7 +11,7 @@
             <h3>email@email.com</h3>
             <br>
             <br>
-            <h3><a href="#">instagram</a></h3>
+            <h3><a href="https://www.instagram.com/calcifurr/">instagram</a></h3>
         </div>
         
     </div>
