@@ -40,8 +40,8 @@ Route::post('/forrestportal/art/{album_name}/{year_name}/edit/delete', 'PhotoCon
 Route::get('forrestportal/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('forrestportal/login', 'Auth\LoginController@login');
 Route::post('forrestportal/logout', 'Auth\LoginController@logout')->name('logout');
-Route::get('forrestportal/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('forrestportal/register', 'Auth\RegisterController@register');
+//Route::get('forrestportal/register', 'Auth\RegisterController@showRegistrationForm')->name('register'); //Enable these for registration
+//Route::post('forrestportal/register', 'Auth\RegisterController@register');
 // Password Reset Routes...
 //Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
 //Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
