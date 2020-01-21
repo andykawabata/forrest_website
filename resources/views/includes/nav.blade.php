@@ -22,7 +22,7 @@
                 <li><a id="contact" href="{{route('contact')}}">CONTACT</a></li>
             </ul>
         </nav>
-        <div id="menu-toggle"><i class="fa fa-bars fa-2x"></i></div>
+        <div id="menu-toggle"><i class="fa fa-bars " style="transform: scale(1.5,1.5);"></i></div>
     </div>
 </header>
 
